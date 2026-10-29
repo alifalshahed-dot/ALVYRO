@@ -1,0 +1,6 @@
+{
+  "name": "AMIRÁ - Contemporary High-Street Fashion Bangladesh",
+  "description": "AMIRÁ's official online store featuring Eastern & Western ready-to-wear, 3-piece kameez, luxury Panjabis, co-ords, and festive collections with nationwide delivery across Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      // Ensure window.fetch has both getter and setter so browser extensions can intercept without throwing errors
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          if (_origFetch) {
+            var _curFetch = _origFetch;
+            Object.defineProperty(window, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function() { return _curFetch; },
+              set: function(v) { _curFetch = v; }
+            });
+          }
+        } catch (_) {}
+
+        // Suppress external browser extension script errors from bubbling up to dev overlay
+        window.addEventListener('error', function(e) {
+          if (e.filename && (e.filename.startsWith('chrome-extension://') || e.filename.startsWith('moz-extension://'))) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+        window.addEventListener('unhandledrejection', function(e) {
+          var stack = (e.reason && e.reason.stack) ? e.reason.stack : '';
+          if (typeof stack === 'string' && (stack.includes('chrome-extension://') || stack.includes('moz-extension://'))) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALVYRO — Contemporary Menswear & Tailored Streetwear | BANGLADESH</title>
+    <meta name="description" content="ALVYRO features premium combed drop-shoulder t-shirts, 220 GSM pique polos, breathable Cuban linen shirts, and viral Korean double-pleated trousers. Nationwide delivery across BANGLADESH." />
+    <meta property="og:title" content="ALVYRO — Contemporary Menswear & Tailored Streetwear | Chittagong, Bangladesh" />
+    <meta property="og:description" content="Explore signature heavyweight t-shirts, executive polo knits, and fluid drape Korean pleated trousers. Cash on delivery nationwide." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FAF8F5] text-stone-900 font-sans antialiased selection:bg-[#782333] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

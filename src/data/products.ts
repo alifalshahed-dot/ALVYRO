@@ -1,0 +1,526 @@
+import { Product } from '../types';
+
+export const PRODUCTS: Product[] = [
+  // ==========================================
+  // 1. টি-শার্ট ও পোলো টি-শার্ট (T-Shirts & Polo Shirts)
+  // ==========================================
+  {
+    id: 'alif-ts-01',
+    sku: 'ALV-TS-101',
+    title: 'Premium Combed Cotton Drop-Shoulder T-Shirt',
+    titleBn: 'প্রিমিয়াম কম্বড কটন ড্রপ-শোল্ডার টি-শার্ট',
+    category: 't-shirt',
+    categoryGroup: 't-shirts-polo',
+    categoryName: 'Casual T-Shirt',
+    categoryNameBn: 'ক্যাজুয়াল টি-শার্ট',
+    price: 480,
+    originalPrice: 650,
+    discountPercent: 26,
+    inStock: true,
+    featured: true,
+    isNewArrival: true,
+    isBestseller: true,
+    fabric: '100% Organic Combed Compact Cotton',
+    fabricBn: '১০০% অরগানিক কম্বড কম্প্যাক্ট কটন (১৮০ জিএসএম)',
+    gsm: '180 GSM',
+    color: 'Carbon Jet Black',
+    colorCode: '#1C1C1E',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Everyday modern casual comfort. Crafted from 100% fine combed cotton with reactive silicone wash, double-needle stitched hem, and contemporary relaxed drop-shoulder cut.',
+    descriptionBn: 'দৈনন্দিন পরার জন্য সেরা আরামদায়ক টি-শার্ট। ১৮০ জিএসএম প্রিমিয়াম কম্বড কটন, সিলিকন ওয়াশ ফিনিশ ও ট্রেন্ডি ড্রপ-শোল্ডার প্যাটার্ন। যেকোনো ক্যাজুয়াল আউটিংয়ের জন্য পারফেক্ট।',
+    details: {
+      fit: 'Relaxed Modern Drop-Shoulder Fit',
+      material: '100% Combed Cotton (180 GSM Bio-Washed)',
+      features: 'Non-shrink fabric, ribbed crew neck, anti-pilling yarn.',
+      care: 'Machine wash cold with like colors. Do not bleach. Iron inside out.'
+    },
+    rating: 4.9,
+    reviewCount: 56
+  },
+  {
+    id: 'alif-ts-02',
+    sku: 'ALV-TS-102',
+    title: 'Minimalist Sage Green Heavyweight Cotton Tee',
+    titleBn: 'মিনিমালিস্ট সেজ গ্রিন হেভিওয়েট কটন টি-শার্ট',
+    category: 't-shirt',
+    categoryGroup: 't-shirts-polo',
+    categoryName: 'Casual T-Shirt',
+    categoryNameBn: 'ক্যাজুয়াল টি-শার্ট',
+    price: 520,
+    originalPrice: 700,
+    discountPercent: 25,
+    inStock: true,
+    featured: false,
+    isNewArrival: true,
+    fabric: 'Heavyweight Breathable Cotton',
+    fabricBn: '২০০ জিএসএম ব্রীদি কটন ফ্যাব্রিক',
+    gsm: '200 GSM',
+    color: 'Sage Olive Green',
+    colorCode: '#738671',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Premium heavyweight cotton tee designed with structured drape that does not cling to body. Breathable and comfortable in warm weather.',
+    descriptionBn: 'প্রিমিয়াম কোয়ালিটির হেভিওয়েট কটন টি-শার্ট। স্টাইলিশ সেজ গ্রিন কালার, গরমে অত্যন্ত আরামদায়ক ও টেকসই রঙ।',
+    details: {
+      fit: 'Regular Boxy Fit',
+      material: '200 GSM Compact Spun Cotton',
+      features: 'High density stitch, enzyme softened.',
+      care: 'Normal wash, tumble dry low.'
+    },
+    rating: 4.8,
+    reviewCount: 32
+  },
+  {
+    id: 'alif-pl-01',
+    sku: 'ALV-PL-201',
+    title: 'Classic Pique Cotton Executive Polo Shirt',
+    titleBn: 'ক্লাসিক পিকের কটন এক্সিকিউটিভ পোলো টি-শার্ট',
+    category: 'polo-shirt',
+    categoryGroup: 't-shirts-polo',
+    categoryName: 'Premium Polo',
+    categoryNameBn: 'প্রিমিয়াম পোলো শার্ট',
+    price: 750,
+    originalPrice: 990,
+    discountPercent: 24,
+    inStock: true,
+    featured: true,
+    isBestseller: true,
+    fabric: 'Matty Pique Combed Cotton (220 GSM)',
+    fabricBn: 'ম্যাটি পিকে কম্বড কটন (২২০ জিএসএম)',
+    gsm: '220 GSM',
+    color: 'Royal Navy Blue',
+    colorCode: '#1A2A44',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    image: 'https://images.unsplash.com/photo-1625910513413-7223b2c286cf?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1625910513413-7223b2c286cf?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'A timeless staple for semi-formal meetings or smart weekend wear. Made from high-density breathable pique knit with custom mother-of-pearl buttons, tipped rib collar, and side vent slits.',
+    descriptionBn: 'আভিজাত্য ও রুচিশীলতার প্রতীক প্রিমিয়াম পোলো শার্ট। ২২ মাত্রার খাঁটি ম্যাটি পিকে কটন, উন্নত মানের কালার বোতাম এবং কলার ডিটেইলিং। অফিস বা বন্ধুদের আড্ডা সব জায়গায় মানানসই।',
+    details: {
+      fit: 'Smart Tailored Fit',
+      material: '220 GSM 100% Pique Cotton',
+      features: 'Ribbed collar and cuffs that retain shape after washes.',
+      care: 'Hand wash or gentle machine wash inside out.'
+    },
+    rating: 4.9,
+    reviewCount: 68
+  },
+  {
+    id: 'alif-pl-02',
+    sku: 'ALV-PL-202',
+    title: 'Contrast Collar Premium Cotton Polo',
+    titleBn: 'কনট্রাস্ট কলার প্রিমিয়াম কটন পোলো শার্ট',
+    category: 'polo-shirt',
+    categoryGroup: 't-shirts-polo',
+    categoryName: 'Premium Polo',
+    categoryNameBn: 'প্রিমিয়াম পোলো শার্ট',
+    price: 790,
+    originalPrice: 1050,
+    discountPercent: 25,
+    inStock: true,
+    featured: false,
+    isNewArrival: true,
+    fabric: 'Soft Lycra Spandex Pique Blend',
+    fabricBn: 'সফট লায়করা ব্লেন্ডেড পিকে সুতি',
+    gsm: '220 GSM',
+    color: 'Burgundy Crimson',
+    colorCode: '#6B1D28',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    image: 'https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Modern active polo featuring dynamic contrast tipping on collar and sleeves, reinforced taped neck, and durable stretch recovery.',
+    descriptionBn: 'আকর্ষণীয় বার্গান্ডি কালার সাথে কন্ট্রাস্ট কলার। স্ট্রেচ কমফোর্টের সাথে নিখুঁত ফিনিশিং।',
+    details: {
+      fit: 'Slim Comfort Fit',
+      material: '95% Combed Cotton, 5% Lycra',
+      features: 'Double-stitched shoulder seam, stay-flat collar.',
+      care: 'Machine wash warm, do not iron on print.'
+    },
+    rating: 4.8,
+    reviewCount: 41
+  },
+
+  // ==========================================
+  // 2. শার্ট (Casual & Formal Shirts)
+  // ==========================================
+  {
+    id: 'alif-sh-01',
+    sku: 'ALV-CS-301',
+    title: 'Breezy Linen-Cotton Relaxed Casual Shirt',
+    titleBn: 'ব্রিদি লিনেন-কটন রিল্যাক্সড ক্যাজুয়াল শার্ট',
+    category: 'casual-shirt',
+    categoryGroup: 'shirts',
+    categoryName: 'Casual Shirt',
+    categoryNameBn: 'ক্যাজুয়াল শার্ট',
+    price: 950,
+    originalPrice: 1250,
+    discountPercent: 24,
+    inStock: true,
+    featured: true,
+    isBestseller: true,
+    fabric: 'Fine Cotton Linen Blend',
+    fabricBn: 'ফাইন কটন লিনেন ব্লেন্ড',
+    color: 'Oatmeal Natural Khaki',
+    colorCode: '#D2B48C',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'An essential warm-weather casual shirt crafted from a lightweight linen-cotton weave. Designed with a curved hemline and soft spread collar that can be worn tucked in or loose.',
+    descriptionBn: 'গরমের দিনে স্টাইলিশ ও আরামদায়ক থাকার সেরা সঙ্গী। সফট লিনেন কটন মিশ্রিত কাপড়, যা ঘাম প্রতিরোধ করে শরীরকে ঠাণ্ডা রাখে। ক্যাজুয়াল ট্রাউজার বা জিন্সের সাথে চমৎকার মানায়।',
+    details: {
+      fit: 'Relaxed Casual Fit',
+      material: '60% Fine Linen, 40% Combed Cotton',
+      features: 'Horn finish buttons, single chest patch pocket.',
+      care: 'Machine wash cold, line dry in shade.'
+    },
+    rating: 4.9,
+    reviewCount: 47
+  },
+  {
+    id: 'alif-sh-02',
+    sku: 'ALV-CS-302',
+    title: 'Cuban Collar Textured Short-Sleeve Casual Shirt',
+    titleBn: 'কিউবান কলার টেক্সচার্ড হাফ-হাতা ক্যাজুয়াল শার্ট',
+    category: 'casual-shirt',
+    categoryGroup: 'shirts',
+    categoryName: 'Casual Shirt',
+    categoryNameBn: 'ক্যাজুয়াল শার্ট',
+    price: 850,
+    originalPrice: 1100,
+    discountPercent: 22,
+    inStock: true,
+    featured: false,
+    isNewArrival: true,
+    fabric: 'Crinkle Textured Cotton',
+    fabricBn: 'ক্রিঙ্কেল টেক্সচার্ড ১০০% সুতি',
+    color: 'Midnight Slate Blue',
+    colorCode: '#2F4F4F',
+    sizes: ['M', 'L', 'XL'],
+    image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Contemporary retro Cuban open collar design. Self-textured breathable cotton perfect for beach outings, holidays, and summer hangouts.',
+    descriptionBn: 'আধুনিক ট্রেন্ডি কিউবান কলারযুক্ত হাফ-হাতা শার্ট। সেলফ টেক্সচার্ড কটন ফেব্রিক এবং ইউনিক বাটন ওয়ার্ক।',
+    details: {
+      fit: 'Boxy Casual Drape',
+      material: '100% Breathable Structured Cotton',
+      features: 'Open camp collar, side slit straight hem.',
+      care: 'Gentle hand wash or machine cycle.'
+    },
+    rating: 4.7,
+    reviewCount: 29
+  },
+  {
+    id: 'alif-fs-01',
+    sku: 'ALV-FS-401',
+    title: 'Executive Royal Oxford Cotton Formal Shirt',
+    titleBn: 'এক্সিকিউটিভ রয়্যাল অক্সফোর্ড কটন ফরমাল শার্ট',
+    category: 'formal-shirt',
+    categoryGroup: 'shirts',
+    categoryName: 'Formal Shirt',
+    categoryNameBn: 'ফরমাল শার্ট',
+    price: 1150,
+    originalPrice: 1450,
+    discountPercent: 20,
+    inStock: true,
+    featured: true,
+    isBestseller: true,
+    fabric: '100% Superfine Oxford Cotton (Easy-Care)',
+    fabricBn: '১০০% সুপারফাইন অক্সফোর্ড সুতি (রিঙ্কেল-ফ্রি)',
+    color: 'Crisp Snow White',
+    colorCode: '#FFFFFF',
+    sizes: ['15 (M)', '15.5 (L)', '16 (XL)', '16.5 (XXL)'],
+    image: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'The sharpest formal shirt for office, interviews, presentations, and ceremonial events. Features structured fusing collar, convertible barrel cuffs, and wrinkle-resistant basket weave.',
+    descriptionBn: 'অফিস, প্রেজেন্টেশন বা ভাইভার জন্য নিখুঁত ফরমাল শার্ট। হাই-কোয়ালিটি অক্সফোর্ড উইভ, ফিউজিং কলার এবং রিঙ্কেল-রেজিস্ট্যান্ট ফিনিশিং। সারাদিন থাকে মসৃণ ও পরিপাটি।',
+    details: {
+      fit: 'Modern Slim / Regular Formal Fit',
+      material: '100% Two-Ply Compact Oxford Cotton',
+      features: 'Stiff collar stays, reinforced armhole stitching.',
+      care: 'Machine wash warm. Warm iron for crisp boardroom finish.'
+    },
+    rating: 5.0,
+    reviewCount: 74
+  },
+  {
+    id: 'alif-fs-02',
+    sku: 'ALV-FS-402',
+    title: 'Sky Blue Executive Twill Formal Shirt',
+    titleBn: 'স্কাই ব্লু এক্সিকিউটিভ টুইল ফরমাল শার্ট',
+    category: 'formal-shirt',
+    categoryGroup: 'shirts',
+    categoryName: 'Formal Shirt',
+    categoryNameBn: 'ফরমাল শার্ট',
+    price: 1180,
+    originalPrice: 1490,
+    discountPercent: 21,
+    inStock: true,
+    featured: false,
+    isNewArrival: true,
+    fabric: 'Fine Twill Cotton Weave with Silk Glaze',
+    fabricBn: 'ফাইন টুইল কটন ও সিল্ক গ্লেজ ফিনিশ',
+    color: 'Corporate Sky Blue',
+    colorCode: '#A3C1AD',
+    sizes: ['15 (M)', '15.5 (L)', '16 (XL)', '16.5 (XXL)'],
+    image: 'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'A classic professional pastel blue shirt made from high-density twill weave. Glides smoothly under blazers or suits.',
+    descriptionBn: 'কর্পোরেট পেশাজীবীদের প্রথম পছন্দ। ফাইন টুইল কটনের হালকা উজ্জ্বল ফিনিশিং, আরামদায়ক ফিটিং।',
+    details: {
+      fit: 'Executive Tailored Cut',
+      material: '100% Egyptian Giza Staple Cotton',
+      features: 'Dual button adjustable cuffs, reinforced yoke.',
+      care: 'Normal laundry, steam iron.'
+    },
+    rating: 4.9,
+    reviewCount: 38
+  },
+
+  // ==========================================
+  // 3. প্যান্ট কালেকশন (Pants Collection)
+  // ==========================================
+  {
+    id: 'alif-kp-01',
+    sku: 'ALV-KP-501',
+    title: 'Korean Pleated Wide-Leg Baggy Trousers',
+    titleBn: 'কোরিয়ান প্লিটেড ওয়াইড-লেগ ব্যাগি ট্রাউজার্স',
+    category: 'korean-pant',
+    categoryGroup: 'pants',
+    categoryName: 'Korean Pants',
+    categoryNameBn: 'কোরিয়ান প্যান্ট',
+    price: 1250,
+    originalPrice: 1650,
+    discountPercent: 24,
+    inStock: true,
+    featured: true,
+    isNewArrival: true,
+    isBestseller: true,
+    fabric: 'Poly-Viscose Suiting Drape Fabric with Spandex Stretch',
+    fabricBn: 'পলি-ভিসকোস সুটিং ড্র্যাপ ফেব্রিক ও স্ট্রেচ',
+    color: 'Ash Charcoal Grey',
+    colorCode: '#4A4E51',
+    sizes: ['28', '30', '32', '34', '36'],
+    image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'The viral Korean streetwear aesthetic brought to everyday luxury. Double front pleats, fluid silhouette, elastic waistband hidden inserts, and deep slant pockets. Pair with oversized tees or tucked-in Cuban shirts.',
+    descriptionBn: 'সোশ্যাল মিডিয়ায় দারুণ ট্রেন্ডি কোরিয়ান স্টাইলের প্লিটেড প্যান্ট! ফ্লুইড ড্র্যাপ, সামনের নিখুঁত প্লিট এবং সুপার কমফোর্ট স্ট্রেচ মেটেরিয়াল। টি-শার্ট ও স্নিকার্সের সাথে চমৎকার লুক দেয়।',
+    details: {
+      fit: 'Korean Wide Straight Leg with Front Pleats',
+      material: '70% Viscose, 26% Polyester, 4% Spandex',
+      features: 'High-waist fit, hidden inner waist adjusters, YKK zipper.',
+      care: 'Gentle wash inside out. Low heat iron to preserve pleat crease.'
+    },
+    rating: 4.9,
+    reviewCount: 83
+  },
+  {
+    id: 'alif-kp-02',
+    sku: 'ALV-KP-502',
+    title: 'Korean Minimalist Relaxed Flow Pants',
+    titleBn: 'কোরিয়ান মিনিমালিস্ট রিল্যাক্সড ফ্লো প্যান্ট',
+    category: 'korean-pant',
+    categoryGroup: 'pants',
+    categoryName: 'Korean Pants',
+    categoryNameBn: 'কোরিয়ান প্যান্ট',
+    price: 1190,
+    originalPrice: 1550,
+    discountPercent: 23,
+    inStock: true,
+    featured: false,
+    isNewArrival: true,
+    fabric: 'Crepe Flow Viscose Blend',
+    fabricBn: 'ক্রেপ ফ্লো ভিসকোস ব্লেন্ড',
+    color: 'Warm Almond Beige',
+    colorCode: '#D8C3A5',
+    sizes: ['28', '30', '32', '34', '36'],
+    image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Clean-cut Korean relaxed pants with straight bottom hem. Incredibly soft, airy and stylish for casual Fridays and evening outings.',
+    descriptionBn: 'কোরিয়ান আধুনিক ফ্যাশনের আরামদায়ক বেজ প্যান্ট। সফট ড্র্যাপ ও নিখুঁত সেলাই।',
+    details: {
+      fit: 'Relaxed Straight Flow',
+      material: 'Premium Viscose Fabric',
+      features: 'Side pockets, back welt pockets, clean finish.',
+      care: 'Normal gentle wash.'
+    },
+    rating: 4.8,
+    reviewCount: 39
+  },
+  {
+    id: 'alif-fp-01',
+    sku: 'ALV-FP-601',
+    title: 'Tailored 4-Way Stretch Gabardine Formal Pants',
+    titleBn: 'টেইলর্ড ৪-ওয়ে স্ট্রেচ গ্যাবার্ডিন ফরমাল প্যান্ট',
+    category: 'formal-pant',
+    categoryGroup: 'pants',
+    categoryName: 'Formal Pants',
+    categoryNameBn: 'ফরমাল প্যান্ট',
+    price: 1290,
+    originalPrice: 1690,
+    discountPercent: 23,
+    inStock: true,
+    featured: true,
+    isBestseller: true,
+    fabric: 'Premium 4-Way Stretch Cotton Gabardine',
+    fabricBn: 'প্রিমিয়াম ৪-ওয়ে স্ট্রেচ কটন গ্যাবার্ডিন',
+    color: 'Midnight Obsidian Black',
+    colorCode: '#111214',
+    sizes: ['28', '30', '32', '34', '36', '38'],
+    image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Engineered for modern executives who value both sharp tailoring and all-day flexibility. Featuring 4-way elastic recovery, shirt gripper inner waistband, and anti-fade reactive dye.',
+    descriptionBn: 'অফিস ও ফরমাল ব্যবহারের জন্য সেরা গ্যাবার্ডিন প্যান্ট। ৪-ওয়ে স্ট্রেচেবল হওয়ায় বসা বা চলাফেরায় প্রচণ্ড আরামদায়ক। কালার গ্যারান্টিযুক্ত টেকসই কাপড় ও প্রিমিয়াম বাটন।',
+    details: {
+      fit: 'Tailored Slim-Straight Formal Fit',
+      material: '97% Combed Cotton Gabardine, 3% Spandex',
+      features: 'Inner rubberized shirt gripper, double-stitched belt loops.',
+      care: 'Machine wash cold, iron medium heat.'
+    },
+    rating: 4.9,
+    reviewCount: 91
+  },
+  {
+    id: 'alif-fp-02',
+    sku: 'ALV-FP-602',
+    title: 'Slate Grey Executive Formal Trouser',
+    titleBn: 'স্লেট গ্রে এক্সিকিউটিভ ফরমাল ট্রাউজার',
+    category: 'formal-pant',
+    categoryGroup: 'pants',
+    categoryName: 'Formal Pants',
+    categoryNameBn: 'ফরমাল প্যান্ট',
+    price: 1250,
+    originalPrice: 1590,
+    discountPercent: 21,
+    inStock: true,
+    featured: false,
+    fabric: 'Super 120s Wool-Touch Microfiber',
+    fabricBn: 'সুপার উলেন-টাচ মাইক্রোফাইবার সুটিং',
+    color: 'Slate Charcoal Grey',
+    colorCode: '#53565A',
+    sizes: ['30', '32', '34', '36'],
+    image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Structured grey formal trousers that resist daily wrinkles. An indispensable choice for white and blue formal shirts.',
+    descriptionBn: 'স্মার্ট ও রুচিশীল স্লেট গ্রে কালার। ফরমাল শার্টের সাথে দারুণ কম্বিনেশন তৈরি করে।',
+    details: {
+      fit: 'Regular Formal Cut',
+      material: 'High-density wrinkle-free suiting blend',
+      features: 'Twin back button pockets, YKK lock zipper.',
+      care: 'Dry clean or gentle hand wash.'
+    },
+    rating: 4.8,
+    reviewCount: 44
+  },
+  {
+    id: 'alif-ct-01',
+    sku: 'ALV-CT-701',
+    title: 'Comfort Ankle-Cut Chino Casual Trouser',
+    titleBn: 'কমফোর্ট অ্যাঙ্কেল-কাট চিনো ক্যাজুয়াল ট্রাউজার্স',
+    category: 'casual-trouser',
+    categoryGroup: 'pants',
+    categoryName: 'Casual Trouser',
+    categoryNameBn: 'ক্যাজুয়াল ট্রাউজার্স',
+    price: 1100,
+    originalPrice: 1400,
+    discountPercent: 21,
+    inStock: true,
+    featured: true,
+    isBestseller: true,
+    fabric: 'Enzyme Washed Stretch Cotton Chino',
+    fabricBn: 'এনজাইম ওয়াশড স্ট্রেচ কটন চিনো',
+    color: 'Desert Khaki Tan',
+    colorCode: '#C3B091',
+    sizes: ['28', '30', '32', '34', '36'],
+    image: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'The go-anywhere trouser. Enzyme-washed for ultra-soft hand feel with added stretch. Pairs effortlessly with polo shirts, casual shirts, and t-shirts.',
+    descriptionBn: 'সব বয়সের জন্য অত্যন্ত আরামদায়ক চিনো ট্রাউজার। সফট ওয়াশড সুতি ফেব্রিক, যা প্রতিদিনের ব্যবহারে দারুণ স্বস্তি দেয়।',
+    details: {
+      fit: 'Tapered Ankle-Length Fit',
+      material: '98% Cotton, 2% Elastane',
+      features: 'Chino slant pockets, reinforced crotch seam.',
+      care: 'Machine wash cold with like colors.'
+    },
+    rating: 4.9,
+    reviewCount: 65
+  },
+  {
+    id: 'alif-ct-02',
+    sku: 'ALV-CT-702',
+    title: 'Drawstring Elasticated Comfort Cargo Trouser',
+    titleBn: 'ড্রস্ট্রিং ইলাস্টিক কমফোর্ট কার্গো ট্রাউজার্স',
+    category: 'casual-trouser',
+    categoryGroup: 'pants',
+    categoryName: 'Casual Trouser',
+    categoryNameBn: 'ক্যাজুয়াল ট্রাউজার্স',
+    price: 1150,
+    originalPrice: 1450,
+    discountPercent: 20,
+    inStock: true,
+    featured: false,
+    isNewArrival: true,
+    fabric: 'Tough Ripstop Cotton Canvas',
+    fabricBn: 'রিপস্টপ কটন ক্যানভাস',
+    color: 'Military Olive Green',
+    colorCode: '#4B5320',
+    sizes: ['M (28-30)', 'L (31-33)', 'XL (34-36)'],
+    image: 'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=900&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=900&q=80'
+    ],
+    description: 'Functional utilitarian cargo trousers with elastic drawstring waistband and 6 reinforced pockets. Ultimate casual ease.',
+    descriptionBn: 'ইলাস্টিক কোমরযুক্ত ড্রস্ট্রিং কার্গো ট্রাউজার্স। ৬টি পকেট সমৃদ্ধ, টেকসই এবং চলাফেরায় চূড়ান্ত আরাম।',
+    details: {
+      fit: 'Comfort Cargo Relaxed Cut',
+      material: '100% Breathable Ripstop Cotton',
+      features: 'Drawstring tie waist, gusseted cargo utility pockets.',
+      care: 'Machine wash regular.'
+    },
+    rating: 4.7,
+    reviewCount: 34
+  }
+];
+
+export const CATEGORIES = [
+  { id: 'all', name: 'All Collection', nameBn: 'সকল পোশাক', count: 12 },
+  { id: 't-shirt', name: 'Casual T-Shirts', nameBn: 'ক্যাজুয়াল টি-শার্ট', count: 2 },
+  { id: 'polo-shirt', name: 'Premium Polo Shirts', nameBn: 'পোলো টি-শার্ট', count: 2 },
+  { id: 'casual-shirt', name: 'Casual Shirts', nameBn: 'ক্যাজুয়াল শার্ট', count: 2 },
+  { id: 'formal-shirt', name: 'Formal Shirts', nameBn: 'ফরমাল শার্ট', count: 2 },
+  { id: 'korean-pant', name: 'Korean Pants', nameBn: 'কোরিয়ান প্যান্ট', count: 2 },
+  { id: 'formal-pant', name: 'Formal Pants', nameBn: 'ফরমাল প্যান্ট', count: 2 },
+  { id: 'casual-trouser', name: 'Casual Trousers', nameBn: 'ক্যাজুয়াল ট্রাউজার্স', count: 2 }
+];
